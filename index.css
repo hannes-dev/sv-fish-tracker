@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 5vw;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fish-box {
+    cursor: pointer;
+    background-color: #252525;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    height: 200px;
+    width: 15vw;
+
+    transition: transform .2s;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fish-box:hover {
+    transform: scale(1.02);
+}
+
+.fish-box[checked] {
+    opacity: 0.4;
+}
+
+.fish-box[checked] > img {
+    filter: grayscale(100%);
+    opacity: 0.4;
+}
+
+.fish-box[checked] > .checkbox {
+    background-color: greenyellow;
+    opacity: 1;
+    border:2px solid greenyellow;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    margin: 1px;
+}
+
+button[selected] {
+    background-color: yellow;
+}
+
+.filter-group {
+    margin-left: 20px;
+}
+
+button.reset {
+    margin-left: 50px;
+}
+
+input {
+    margin-left: 20px;
+}
+
+label {
+    transform: translate(0px, 4px);
+}
+
+.checkbox {
+    align-self: flex-end;
+    height: 15px;
+    width: 15px;
+    border:2px solid white;
+    border-radius: 100px;
+
+    position: absolute;
+}
+
+.controls {
+    display: flex;
+}
