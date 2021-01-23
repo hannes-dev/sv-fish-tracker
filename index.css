@@ -85,6 +85,10 @@ label {
     transform: translate(0px, 4px);
 }
 
+a {
+    color: orange;
+}
+
 .checkbox {
     align-self: flex-end;
     height: 15px;
