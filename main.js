@@ -124,7 +124,8 @@ let App = {
             m(".list", fishlist.map((obj) => {
                 return m(infobox, {fish: obj})
             })),
-            m("p", "Images and info from ", m("a", {href: "https://stardewcommunitywiki.com/Stardew_Valley_Wiki"}, "the Stardew Valley Wiki"), ". All rights reserved.")
+            m("p", "Images and info from ", m("a", {href: "https://stardewcommunitywiki.com/Stardew_Valley_Wiki"}, "the Stardew Valley Wiki"), ". All rights reserved."),
+            m("img", {src: "https://app.piratepx.com/ship?p=7e2e5912-9d50-48ee-888d-a51d91b45cd7"}),
         ]
     }
 }
