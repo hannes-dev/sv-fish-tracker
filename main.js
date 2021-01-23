@@ -99,7 +99,12 @@ let infobox = {
             } else {
                 collected_fish.add(vnode.attrs.fish.name)
             }
+            
             localStorage.setItem("collected_fish", JSON.stringify(Array.from(collected_fish)))
+
+            if (hide_collected) {
+                update_list()
+            }
         }}, [
             m("div.checkbox"),
             m("img", {src: vnode.attrs.fish.img}),
