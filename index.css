@@ -2,7 +2,10 @@ body {
     background-color: #121212;
     font-family: sans-serif;
     margin: 0px;
-    padding: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     color: white;
 
     display: flex;
@@ -14,6 +17,7 @@ body {
 }
 
 .list {
+    margin-top: 1vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
